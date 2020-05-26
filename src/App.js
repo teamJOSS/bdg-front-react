@@ -1,22 +1,41 @@
-import React, { useState } from 'react';
-import fake1 from './assets/images/fake1.png';
-import fake2 from './assets/images/fake2.png';
-import shark1 from './assets/images/jows1.png';
-import shark2 from './assets/images/jows2.png';
-import shark3 from './assets/images/jows3.png';
+import React from 'react';
 import './App.css';
+import { Route, Link } from 'react-router-dom';
+import styled from 'styled-components'
+
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Notices from './pages/Notices';
+import Settings from './pages/Settings';
+import {DataProvider} from './async/DataContext';
 
 function App() {
-  const [fake, setFake] = useState(fake1);
   return (
-    <div style={{width:"1000px",margin:"0 auto",position:"relative"}}>
-      <img src={shark1} className="shark1"/>
-      <img src={shark2} className="shark2"/>
-      <img src={shark3} className="shark3"/>
-      <h1><span role="img">🦈</span>와 BunDeGi</h1>
-      <img src={fake} alt="죠습니다" style={{cursor:"pointer"}} onClick={_=>(fake === fake1) ? setFake(fake2) : setFake(fake1)}/>
-    </div>
+    <>
+      <DataProvider>
+        <Route exact path="/" component={Home} />
+        <Route path="/login" component={Login} />
+        <Route path="/notices" component={Notices} />
+        <Route path="/settings" component={Settings} />
+      </DataProvider>
+      <DivRouterGuide>
+          <Link to="/">홈 페이지</Link>
+          <Link to="/login">로그인 페이지</Link>
+          <Link to="/notices">공지사항 페이지</Link>
+          <Link to="/settings">세팅 페이지</Link>
+      </DivRouterGuide>
+    </>
   );
 }
+
+const DivRouterGuide = styled.div`
+  padding:14px;
+  position:absolute;
+  top:0;
+  right:0;
+  background:skyblue;
+  display:flex;
+  flex-direction: column;
+`;
 
 export default App;
