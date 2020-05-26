@@ -14,9 +14,9 @@ function Login() {
         {/* 안내문구 */}
         <span>로그인 해주세요</span>
         {/* 아이디 Input */}
-        <Input label={"아이디"} placeholder="아이디"/>
+        <Input label={"아이디"} id="userId" placeholder="아이디"/>
         {/* 비밀번호 Input */}
-        <Input label={"비밀번호"} placeholder="비밀번호"/>
+        <Input label={"비밀번호"} id="userPw" placeholder="비밀번호"/>
         {/* 로그인 버튼 */}
         <Button id="login" value="로그인"/>
         {/* 아이디비번찾기 */}
@@ -51,9 +51,10 @@ const SectionLogin = styled.section`
 const Input = styled.input.attrs(props => ({
   type: "text",
 }))`
-
+  /* 스타일 작성 위치 */
 `;
 const Button = styled.button`
+  /* 스타일 작성 위치 */
 
 `;
 
