@@ -1,6 +1,5 @@
 import React from 'react';
-import Headers from '../containers/Headers';
-import Sidebar from '../containers/Sidebar';
+import styled from 'styled-components';
 import NoticeBar from '../containers/NoticeBar';
 import PatientTable from '../containers/PatientTable';
 import DateSelector from '../containers/DateSelector';
@@ -8,15 +7,17 @@ import PatientCheckup from '../containers/PatientCheckup';
 
 function Home() {
   return (
-    <>
-      <Headers/>
-      <Sidebar/>
+    <SectionHome>
       <NoticeBar/>
       <PatientTable/>
       <DateSelector/>
       <PatientCheckup/>
-    </>
+    </SectionHome>
   )
 }
-
 export default Home;
+
+const SectionHome = styled.section`
+  margin:30px 80px;
+  width:100%;
+`;
