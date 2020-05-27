@@ -17,6 +17,7 @@ const Div = styled.div`
   border-radius:8px;
   box-sizing: border-box;
   padding: 14px 36px;
+  margin-bottom:20px;
   background: #fff;
   border: 1px solid #EFF1F4;
   overflow:hidden;

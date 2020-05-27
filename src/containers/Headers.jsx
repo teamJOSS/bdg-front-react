@@ -14,6 +14,6 @@ export default Headers;
 
 const Header = styled.header`
   width:100%;
-  height:80px;
+  min-height:80px;
   background: #333E51;
 `;

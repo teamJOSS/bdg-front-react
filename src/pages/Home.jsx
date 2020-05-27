@@ -24,24 +24,40 @@ function Home() {
 export default Home;
 
 const SectionHome = styled.section`
-  display:flex;
-  flex-direction:column;
   margin:30px 80px;
   width:100%;
   max-width: 1320px;
+  height:860px;
 `;
 const PatientTableContainer = styled.article`
-  background:pink;
-  max-width:880px;
-  min-height:784px;
+  background:#fff;
+  border-radius:8px;
+  border: 1px solid #E1E5EF;
+  float:left;
+  width:880px;
+  height:784px;
+  box-sizing:border-box;
+  padding:24px 36px 38px;
+  margin-right:20px;
 `;
 const DateSelectorContainer = styled.div`
-background:skyblue;
-  max-width:420px;
-height:10px;
+  background:#fff;
+  border-radius:8px;
+  border: 1px solid #E1E5EF;
+  float:left;
+  margin-bottom:20px;
+  width:420px;
+  height:420px;
+  box-sizing:border-box;
+  padding:63px 66px;
 `;
 const PatientCheckupContainer = styled.div`
-background:red;
-  max-width:420px;
-height:10px;
+  background:#fff;
+  border-radius:8px;
+  border: 1px solid #E1E5EF;
+  float:left;
+  width:420px;
+  height:344px;
+  box-sizing:border-box;
+  padding:24px 36px 30px;
 `;
