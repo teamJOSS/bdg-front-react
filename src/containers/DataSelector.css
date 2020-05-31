@@ -1,0 +1,32 @@
+.ant-picker, .ant-picker-input, .ant-picker-suffix {
+  /* display:none; */
+  visibility: hidden;
+  height:0;
+  padding:0;
+  margin:0;
+  border:0;
+}
+
+.ant-picker-panel-container{
+  box-shadow: none;
+}
+
+.ant-picker-date-panel .ant-picker-body {
+  border: 0;
+}
+
+.ant-picker-panel .ant-picker-footer {
+  border: 0;
+}
+.ant-picker-panel{
+  border:0;
+}
+.ant-picker-header {
+  border: 0;
+}
+
+.ant-picker-panel .ant-picker-footer {
+  visibility: hidden;
+  height:0;
+  border:0;
+}

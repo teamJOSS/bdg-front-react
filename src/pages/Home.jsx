@@ -47,9 +47,9 @@ const DateSelectorContainer = styled.div`
   float:left;
   margin-bottom:20px;
   width:420px;
-  height:420px;
+  height:390px;
   box-sizing:border-box;
-  padding:63px 66px;
+  padding:41px 66px 66px 66px;
 `;
 const PatientCheckupContainer = styled.div`
   background:#fff;
@@ -57,7 +57,7 @@ const PatientCheckupContainer = styled.div`
   border: 1px solid #E1E5EF;
   float:left;
   width:420px;
-  height:344px;
+  height:374px;
   box-sizing:border-box;
   padding:24px 36px 30px;
 `;
